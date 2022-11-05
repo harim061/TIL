@@ -1,4 +1,3 @@
-> https://react-tutorial.app/app.html
 
 # 1. intro
 
