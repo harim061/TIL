@@ -74,5 +74,11 @@ createRoot(root).render(React.createElement("p", {}, "Hello World"));
     
 2. Integrate React into an existing App
 	- integrate React to make a certain part of that website interactive
-    
+
+
+👻
+- React JS : 라이브러리
+- React DOM : element들을 html body에 둘 수 있도록 해줌
+- ReactDOM.render(element, element 위치) : element를 가지고 HTML로 만들어 배치하겠다. 사용자에게 보여주겠다
+
 
