@@ -26,7 +26,7 @@ const btn  =(
 
 - 항상 대문자 컴포넌트 사용
 
-
+### < Button /> vs < button />
 ```
 const Container =()=>(
   <div>
@@ -36,8 +36,8 @@ const Container =()=>(
   </div> );
 ```
 
-💜
-1)
+
+1) arrow function
 ```
 const Title =()=>(
   <h3 id="title" onMouseEnter={() => console.log("mounse enter")}>
