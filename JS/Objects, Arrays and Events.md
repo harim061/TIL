@@ -19,3 +19,9 @@ const Student = {
  function name : function(){
     }
 방식으로 객체 안에 function 저장 가능
+
+## window.InnerWidth
+```
+var intViewportWidth = window.innerWidth;
+```
+> 뷰포트의 폭을 받아올 수 있음
