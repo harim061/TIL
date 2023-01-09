@@ -11,3 +11,6 @@
 Math.floor(Math.random() * 10 )
 ```
 ![image](https://user-images.githubusercontent.com/90364684/210805359-3a995392-1fa8-4d6f-9489-56721fc18f08.png)
+
+## Math.abs
+> 절대값 반환
