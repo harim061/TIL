@@ -23,3 +23,28 @@ const food =["tomato","potato"]
 const [myFavFood, mySecondFavFood] = food;
 ```
 ![image](https://user-images.githubusercontent.com/90364684/212548112-7762f79b-ec55-45d6-b46c-907f6f21ed6d.png)
+
+### ❓리렌더링 해주기
+> React.useState() 배열이용
+
+> data는 원하는 이름, f는 set+데이터이름
+
+![image](https://user-images.githubusercontent.com/90364684/212549171-da380f0d-1126-4d0e-848c-9402c0f72f55.png)
+
+💡 값을 부여하면 setCounter 함수는 그 값으로 업데이트, 리렌더링 일으킴
+
+#### state 값 할당하는 법
+1. 직접 할당 : setCounter( counter +1 )
+
+```
+setCounter(counter +1);
+```
+
+2. 함수 할당 : setCounter( counter => counter +1 ) 
+
+```
+setCounter((current) => current+1)
+```
+
+- 함수의 첫번째 인자 : 현재 값
+- 함수의 return 값 : 새로운 값
