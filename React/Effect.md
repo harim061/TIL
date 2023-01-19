@@ -60,3 +60,37 @@ useEffect(()=>{
  },[keyword,counter]);
 ```
 - 두개도 가능 
+
+### Cleanup Function
+
+> 컴포넌트가 destroyed 될 때 뭔가를 하게 해주는 함수
+
+```
+function Hello(){
+    const byFn=()=>{
+        console.log("bye");
+    }
+    const HiFn =()=>{
+        console.log("created");
+        return byFn;
+    }
+    useEffect(HiFn,[]);
+    return <h1>hello</h1>
+}
+
+```
+
+- byFn을 return 하면서 사라지는 때를 알 수 있음
+
+```
+useEffect( ()=>{
+    console.log("hi");
+      return ()=>console.log("bye");
+},[]);
+```
+
+
+![image](https://user-images.githubusercontent.com/90364684/213529737-b9592dd7-b7cc-4e34-bb51-b2c827ee3917.png)
+
+![image](https://user-images.githubusercontent.com/90364684/213529771-ffc5849a-5f98-47e2-9e5c-115c3f630d95.png)
+
