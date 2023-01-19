@@ -54,7 +54,7 @@ function Btn({text){
 
 -> 이벤트 리스너 아님, props
 
--> onClick은 단순히 props의 
+-> onClick은 단순히 prop
 
 💡props에 무언가를 넣을 때 자동적으로 return에 들어가지 않음 -> 직접 써야함
 
