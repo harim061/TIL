@@ -53,3 +53,43 @@ function App(){
 <Link to="경로"> </Link>
 ```
 
+## 다이나믹 url 적용하기
+
+```
+<Route path='/movie/:id' element={<Detail/>}/>
+```
+`/movie/:id` 로 줘야함 `movie/id`는 텍스트 그대로 이므로
+
+```
+<Link to={`/movie/${id}`}>
+```
+![image](https://user-images.githubusercontent.com/90364684/213872239-5d735d59-bab0-4c3f-8c1a-988896457c94.png)
+
+## useParams
+
+> urls에 있는 값을 반환해주는 함수
+
+`<Route path='/movie/:id' element={<Detail/>}/>` url에는 id가 들어갈 자리가 있음
+
+```
+//Detail.js
+
+import { useParams } from "react-router-dom";
+
+function Detail(){
+
+    const x = useParams()
+
+    console.log(x);
+    
+    return(
+    <h1>detail</h1>
+    )
+}
+
+export default Detail;
+```
+- useParams를 이용하여 url에 있는 id값 가져오기
+
+![image](https://user-images.githubusercontent.com/90364684/213872557-0f1c783d-d217-4029-8e36-85d7f603aef4.png)
+
